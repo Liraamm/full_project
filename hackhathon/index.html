@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amaliya and Akbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ? Navbar -->
+    <nav
+      class="navbar bg-success navbar-light"
+      style="
+        background: rgb(30, 81, 17);
+        background: linear-gradient(
+          0deg,
+          rgba(30, 81, 17, 1) 0%,
+          rgba(27, 253, 156, 1) 100%
+        );
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand">ʕ •̀ ω •́ ʔ </a>
+        <form class="d-flex" role="search">
+          <input
+            id="search"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <div aria-label="Basic example">
+          <button
+            style="font-weight: 500; width: 170px"
+            class="admin-panel-btn-show btn btn-outline-success"
+          >
+            Show Admin Panel
+          </button>
+
+          <button
+            style="font-weight: 500; width: 170px"
+            class="admin-panel-btn-hide btn btn-outline-danger"
+          >
+            Hide Admin Panel
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <h1 class="btn-shine">Choose your own soundwave</h1>
+    </div>
+    <!-- ? Navbar ends -->
+
+    <!-- ? Карточки -->
+    <div class="card-list"></div>
+
+    <!-- ? Admin panel -->
+    <form
+      class="d-flex flex-column w-50 align-items-center mt-5"
+      id="add-form"
+      style="margin: 0 auto"
+    >
+      <h2>Admin panel</h2>
+      <input
+        id="title"
+        placeholder="Title"
+        type="text"
+        class="inp form-control w-50 mb-2"
+      />
+      <input
+        id="url"
+        placeholder="Url"
+        type="url"
+        class="inp form-control w-50 mb-2"
+      />
+
+      <button class="button-inner">Add song</button>
+    </form>
+
+    <!-- ? Admin panel ends -->
+
+    <!-- ? Modal starts -->
+    <div class="modal">
+      <p class="message">Edit song</p>
+      <div class="options">
+        <div class="edit-form">
+          <input type="text" id="edit-title" placeholder="Title" />
+          <input type="url" id="edit-url" placeholder="Url" />
+          <div class="edit-buttons">
+            <button class="btn-modal btn-save">Save</button>
+            <button class="btn-modal btn-exit">Exit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ? Modal ends -->
+
+    <!-- ? Pagination -->
+
+    <nav aria-label="Page navigation example" style="margin-top: 100px">
+      <ul class="pagination justify-content-center">
+        <li class="page-item prev">
+          <a class="page-link" href="#">Previous</a>
+        </li>
+        <div class="d-flex pagination-list"></div>
+
+        <li class="page-item next">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ? JS connections -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
